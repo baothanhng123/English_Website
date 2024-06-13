@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Exercise_page</title>
+      <link rel="stylesheet" href="Exercise_style.css">
+   </head> 
+   <body>
+      <header>   
+            <div class="container container1">
+                <div class="item logo"> 
+                  <a href="../HomePage/index.html"> Logo</a> 
+               </div>
+                <div class="item user">
+                  <a href="../UserSetting/Setting_page.html"> Hello user</a>
+               </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="../HomePage/index.html">Home</a>
+                <a href="../Assignment/Assignment_page.html">Assignment</a>
+                <a href="../Statistical/Statistical_page.html">Statistical</a>
+                <a href="../UserHistory/History_page.html">History</a>
+            </div>
+
+            <div class="question_section">
+                  <div class="right question"> Question</div>
+                  <div class="right next_retry">
+                     <input type="button" value="Retry">
+                     <input type="button" value="Next">
+                  </div>
+                  <div class=" right submit">
+                     <a href="../ResultScreen/Result_page.html">
+                        <input type="submit" value="Submit">
+                     </a>
+                  </div>
+            </div>
+      </header>
+      <main>
+         <div class="sidebar">
+            
+         </div>
+         <div id="blocklyDiv" style="height: 700px; width: 800px; margin-left: 400px; margin-top: 200px"></div>       
+      </main>
+         <!-- Load Blockly core -->
+         <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
+         <!-- Load the default blocks -->
+         <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
+         <!-- Load a generator -->
+         <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
+         <!-- Load a message file -->
+         <script src="https://unpkg.com/blockly/msg/en.js"></script>
+         <script src = "Exercise.js"></script>
+    </body>
+</html>
